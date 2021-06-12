@@ -1,0 +1,5 @@
+bookstore\GenreTableTest.class
+bookstore\SmokeTest.class
+bookstore\BooksTableTest.class
+bookstore\UserController.class
+bookstore\GenreContollerTest.class

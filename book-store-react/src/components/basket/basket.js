@@ -11,7 +11,7 @@ import BookCard from "../book-card/book-card";
 const Basket = (props) => {
 
     function buy(){
-        fetch("/orders/create", {
+        fetch("http://localhost:8080/orders/create", {
             headers: {
                 'Content-Type': 'application/json',
                 'Accept': 'application/json'

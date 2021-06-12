@@ -1,0 +1,14 @@
+bookstore\controllers\BookController.class
+bookstore\models\repositories\BookRepository.class
+bookstore\models\repositories\OrderRepository.class
+bookstore\controllers\OrderController.class
+bookstore\models\entities\Book.class
+bookstore\models\entities\Genre.class
+bookstore\controllers\UserController.class
+bookstore\models\entities\Order.class
+bookstore\controllers\dtos\OrderDto.class
+bookstore\models\entities\Users.class
+bookstore\Application.class
+bookstore\models\repositories\UserRepository.class
+bookstore\controllers\GenreController.class
+bookstore\models\repositories\GenreRepository.class

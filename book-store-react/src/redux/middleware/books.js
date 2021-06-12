@@ -8,7 +8,7 @@ export default function booksMiddleware() {
     return store => next => action => {
         switch (action.type) {
             case GetBooksAction:
-                fetch("/books", {
+                fetch("http://localhost:8080/books", {
                     headers: {
                         'Content-Type': 'application/json',
                         'Accept': 'application/json'
@@ -20,7 +20,7 @@ export default function booksMiddleware() {
                 )
                 break;
             case GetListOrdersAction:
-                fetch("/orders", {
+                fetch("http://localhost:8080/orders", {
                     headers: {
                         'Content-Type': 'application/json',
                         'Accept': 'application/json'

@@ -3,7 +3,7 @@ version: "3.0"
 services:
 
   db:
-    build: ./aupoBookStoreBackEnd/db-docker
+    build: ./book-store-db
     ports:
       - 3306:3306
     environment:
@@ -15,7 +15,7 @@ services:
       retries: 50
 
   app:
-    build: ./aupoBookStoreBackEnd
+    build: ./book-store-spring
     ports:
       - "8080:8080"
     depends_on:
@@ -23,6 +23,6 @@ services:
         condition: service_healthy
   
   front:
-    build: ./aupoBookStroreFrontEnd
+    build: ./book-store-react
     ports:
       - "80:80"
